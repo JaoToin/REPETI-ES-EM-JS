@@ -66,3 +66,55 @@ bntExibir.addEventListener('click', (evt)=> {
     }
 })
 
+//COLEÇÃO DE DADOS - ARRAY
+
+transporte = ['Bicicleta', 'Carro', 'Moto', 'Onibus', 'Avião', 'Tototo']
+
+for(i = 0; i < transporte.length; i++){
+    console.log(transporte[i])
+}
+
+//FOR IN 
+
+const divForin = document.querySelector('#div-forin')
+
+for(var pos in transporte){
+    console.log(transporte[pos])
+    divForin.innerHTML += `${transporte[pos]} <br> <br>`
+}
+
+//FOR OF 
+
+const divForOf = document.querySelector('#div-forof')
+
+for(var elem of transporte){
+    divForOf.innerHTML += `${elem} <br> <br>`
+}
+
+//COLEÇÃO DE PESSOAS - ARRAY DE OBJETOS
+
+const pessoas = [
+    {nome: 'Maria', idade: 18, renda: 15000},
+
+    {nome: 'José', idade: 23, renda: 1800},
+
+    {nome: 'Chicó', idade: 32, renda: 1.50},
+    
+    {nome: 'João Grilo', idade: 34, renda: 2.20},
+]
+
+console.log('----------LISTA POR FOR IN----------')
+for(var indiceObjPessoa in pessoa){
+    console.log(pessoas[indiceObjPessoa].nome, [indiceObjPessoa].idade, [indiceObjPessoa].renda)
+
+}
+
+console.log('----------LISTA POR FOR OF----------')
+for(var pessoa of pessoas){
+    console.log(pessoa.nome, pessoa.idade, pessoa.renda)
+}
+
+//FOREACH
+
+const divForeach = document.querySelector('#div-foreach')
+

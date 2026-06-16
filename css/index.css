@@ -8,3 +8,13 @@ h1{
     font-weight: 600;
 
 }
+
+label{
+    color: #772323;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-shadow: 0 2px 4px rgba(255, 0, 0, 0.2);
+    font-weight: 600;
+
+}
